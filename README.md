@@ -1,50 +1,30 @@
-# Welcome to your Expo app 👋
+# React Native Calendar Agenda App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a **React Native Calendar Agenda App** that integrates with the device's native calendar using **Expo Calendar API**. It fetches calendar events and displays them in a scrollable, interactive agenda format. The app dynamically loads events for the current month and allows users to navigate to different months by selecting a day or scrolling.
 
-## Get started
+### Video Demonstration
+Check out this video to see the app in action: [Video Demo](https://drive.google.com/file/d/1zUYgT3ucmuQmJiceOvSifwOpYVCN6F64/view?usp=sharing)
 
-1. Install dependencies
+## Features
+- **Fetch Calendar Events:** Retrieves events from the device's calendar.
+- **Monthly Navigation:** Loads the current month's events by default and allows loading events for previous/next months by scrolling.
+- **Agenda View:** Displays events in an agenda-style format, with a day-by-day breakdown.
+- **Day Press:** Load the selected month's events when a user selects a specific day.
+- **Expo Integration:** Uses Expo's Calendar API to fetch events from the user's calendar.
 
+## Tech Stack
+- **React Native**
+- **Expo Calendar API**
+- **TypeScript**
+- **React Native Calendars (Agenda)**
+
+## Project Structure
+- `components/headers/AppHeader.tsx`: Custom header component.
+- `components/items/AgendaItem.tsx`: Custom agenda item component for rendering event details.
+- `screens/DemoCalendarScreen.tsx`: Main screen for displaying the calendar and events.
+
+## Setup Instructions
+
+1. Clone the repository:
    ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   git clone https://github.com/your-username/calendar-agenda-app.git
